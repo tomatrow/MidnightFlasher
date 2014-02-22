@@ -6,24 +6,39 @@
 //  Copyright (c) 2013 AJ Caldwell. All rights reserved.
 //
 
-#import "ATTCViewController.h"
+#import "MNFViewController.h"
 
-@interface ATTCViewController ()
-
+@interface MNFViewController ()
+@property (weak, nonatomic) IBOutlet UIButton *twelveButton;
+@property (weak, nonatomic) IBOutlet UIButton *AMButton;
+@property NSTimer *timer;
+@property BOOL color;
 @end
 
-@implementation ATTCViewController
+@implementation MNFViewController
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    self.timer = [NSTimer scheduledTimerWithTimeInterval:0.5f
+                                                  target:self
+                                                selector:@selector(flash)
+                                                userInfo:nil 
+                                                 repeats:YES];
 }
+- (void) flash {
+    NSLog(@"hello");
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    if (self.color) {
+        self.view.backgroundColor = [UIColor blackColor];
+        [self.twelveButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+        [self.AMButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+        self.color = NO;
+    } else {
+        self.view.backgroundColor = [UIColor whiteColor];
+        [self.twelveButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+        [self.AMButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+        self.color = YES;
+    }
 }
-
 @end

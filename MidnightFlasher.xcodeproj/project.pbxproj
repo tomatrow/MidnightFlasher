@@ -12,9 +12,9 @@
 		50E1F66E1848699900E5544D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50E1F66D1848699900E5544D /* UIKit.framework */; };
 		50E1F6741848699900E5544D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 50E1F6721848699900E5544D /* InfoPlist.strings */; };
 		50E1F6761848699900E5544D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 50E1F6751848699900E5544D /* main.m */; };
-		50E1F67A1848699900E5544D /* ATTCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 50E1F6791848699900E5544D /* ATTCAppDelegate.m */; };
+		50E1F67A1848699900E5544D /* MNFAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 50E1F6791848699900E5544D /* MNFAppDelegate.m */; };
 		50E1F67D1848699900E5544D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50E1F67B1848699900E5544D /* Main.storyboard */; };
-		50E1F6801848699900E5544D /* ATTCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50E1F67F1848699900E5544D /* ATTCViewController.m */; };
+		50E1F6801848699900E5544D /* MNFViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50E1F67F1848699900E5544D /* MNFViewController.m */; };
 		50E1F6821848699900E5544D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50E1F6811848699900E5544D /* Images.xcassets */; };
 		50E1F6891848699900E5544D /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50E1F6881848699900E5544D /* XCTest.framework */; };
 		50E1F68A1848699900E5544D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50E1F6691848699900E5544D /* Foundation.framework */; };
@@ -42,11 +42,11 @@
 		50E1F6731848699900E5544D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		50E1F6751848699900E5544D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		50E1F6771848699900E5544D /* MidnightFlasher-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MidnightFlasher-Prefix.pch"; sourceTree = "<group>"; };
-		50E1F6781848699900E5544D /* ATTCAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATTCAppDelegate.h; sourceTree = "<group>"; };
-		50E1F6791848699900E5544D /* ATTCAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATTCAppDelegate.m; sourceTree = "<group>"; };
+		50E1F6781848699900E5544D /* MNFAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MNFAppDelegate.h; sourceTree = "<group>"; };
+		50E1F6791848699900E5544D /* MNFAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MNFAppDelegate.m; sourceTree = "<group>"; };
 		50E1F67C1848699900E5544D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		50E1F67E1848699900E5544D /* ATTCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATTCViewController.h; sourceTree = "<group>"; };
-		50E1F67F1848699900E5544D /* ATTCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATTCViewController.m; sourceTree = "<group>"; };
+		50E1F67E1848699900E5544D /* MNFViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MNFViewController.h; sourceTree = "<group>"; };
+		50E1F67F1848699900E5544D /* MNFViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MNFViewController.m; sourceTree = "<group>"; };
 		50E1F6811848699900E5544D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		50E1F6871848699900E5544D /* MidnightFlasherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MidnightFlasherTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		50E1F6881848699900E5544D /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -112,11 +112,11 @@
 		50E1F66F1848699900E5544D /* MidnightFlasher */ = {
 			isa = PBXGroup;
 			children = (
-				50E1F6781848699900E5544D /* ATTCAppDelegate.h */,
-				50E1F6791848699900E5544D /* ATTCAppDelegate.m */,
+				50E1F6781848699900E5544D /* MNFAppDelegate.h */,
+				50E1F6791848699900E5544D /* MNFAppDelegate.m */,
 				50E1F67B1848699900E5544D /* Main.storyboard */,
-				50E1F67E1848699900E5544D /* ATTCViewController.h */,
-				50E1F67F1848699900E5544D /* ATTCViewController.m */,
+				50E1F67E1848699900E5544D /* MNFViewController.h */,
+				50E1F67F1848699900E5544D /* MNFViewController.m */,
 				50E1F6811848699900E5544D /* Images.xcassets */,
 				50E1F6701848699900E5544D /* Supporting Files */,
 			);
@@ -250,8 +250,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				50E1F67A1848699900E5544D /* ATTCAppDelegate.m in Sources */,
-				50E1F6801848699900E5544D /* ATTCViewController.m in Sources */,
+				50E1F67A1848699900E5544D /* MNFAppDelegate.m in Sources */,
+				50E1F6801848699900E5544D /* MNFViewController.m in Sources */,
 				50E1F6761848699900E5544D /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -461,6 +461,7 @@
 				50E1F69A1848699900E5544D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		50E1F69B1848699900E5544D /* Build configuration list for PBXNativeTarget "MidnightFlasherTests" */ = {
 			isa = XCConfigurationList;
@@ -469,6 +470,7 @@
 				50E1F69D1848699900E5544D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

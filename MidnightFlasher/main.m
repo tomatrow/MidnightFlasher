@@ -8,11 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-#import "ATTCAppDelegate.h"
+#import "MNFAppDelegate.h"
 
 int main(int argc, char * argv[])
 {
     @autoreleasepool {
-        return UIApplicationMain(argc, argv, nil, NSStringFromClass([ATTCAppDelegate class]));
+        return UIApplicationMain(argc, argv, nil, NSStringFromClass([MNFAppDelegate class]));
     }
 }

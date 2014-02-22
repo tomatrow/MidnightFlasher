@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ATTCViewController : UIViewController
+@interface MNFViewController : UIViewController
 
 @end

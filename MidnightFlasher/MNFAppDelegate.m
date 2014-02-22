@@ -6,9 +6,9 @@
 //  Copyright (c) 2013 AJ Caldwell. All rights reserved.
 //
 
-#import "ATTCAppDelegate.h"
+#import "MNFAppDelegate.h"
 
-@implementation ATTCAppDelegate
+@implementation MNFAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
