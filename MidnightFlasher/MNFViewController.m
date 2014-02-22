@@ -27,8 +27,6 @@
                                                  repeats:YES];
 }
 - (void) flash {
-    NSLog(@"hello");
-
     if (self.color) {
         self.view.backgroundColor = [UIColor blackColor];
         [self.twelveButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
